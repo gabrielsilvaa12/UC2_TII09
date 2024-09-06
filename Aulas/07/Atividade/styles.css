@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+pre {
+    background-color: rgb(243, 243, 243);
+    color: black;
+}
