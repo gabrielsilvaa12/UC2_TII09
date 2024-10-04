@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+</head>
+<body>
+    <header>
+        <h1>Grid Layout e Suas Propriedades</h1>
+    </header>
+    <main>
+        <h2>Introdução</h2>
+        <p>
+            A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações 
+            para testar e ajustar aspectos visuais antes de utilizar conteúdo real.
+        </p>
+        <hr>
+        <h2>Estrutura básica do Grid</h2>
+        <p>
+            Para criar um layout Grid, primeiro devemos definir um container
+            que irá funcionar como uma grade. Dentro deste contêiner, os itens se
+            alinham conforme as colunas e linhas definidas.
+        </p>
+        <pre>
+            <code>
+                div class="grid-container">
+                    div class="item item1">Item 1
+                    div class="item item2">Item 2
+                    div class="item item3 borda-redonda">Item 3
+                    div class="item item4">Item 4
+                div
+
+                .grid-container {
+                    display: grid; /* Define o container como grid */
+                    grid-template-columns: 200px 200px; /* Define duas colunas de 200px cada */
+                    grid-template-rows: 150px 150px;
+                    gap: 10px;
+                    background-color: lightgray;
+                }
+            </code>
+        </pre>
+        <hr>
+        <h2>Ajustando Colunas e Linhas com o <em>fr</em></h2>
+    </main>
+    <p>
+        Unidade <em>fr</em> (fraction unit) é muito útil se deseja criar
+        colunas ou linhas proporcionais, distribuindo o espaço disponível entre os itens.
+    </p>
+    <hr>
+    <h2>Posicionamento Explícito de itens</h2>
+    <p>
+        Com o Grid, você pode controlar exatamente onde cada item será
+        poscionado.
+    </p>
+</body>
+</html>
