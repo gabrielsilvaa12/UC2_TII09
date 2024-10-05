@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 2fr 2fr 1fr;
+            grid-template-areas: "header header header header"
+            "aside main main main"
+            "aside section section2 section2"
+            "aside footer footer footer";
+            gap: 5px;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgb(173, 216, 230);
+            grid-area: header;
+        }
+
+        main {
+            grid-area: main;
+            background-color: rgb(163, 206, 210);
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: rgb(153, 196, 190);
+        }
+
+        section {
+            position: section;
+            background-color: rgb(143, 186, 170);
+        }
+
+        .section2 {
+            grid-area: section2;
+            background-color: rgb(133, 176, 150);
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: rgb(123, 166, 130);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>Navbr</header>
+        <main>main</main>
+        <aside>Sidebar</aside>
+        <section>Section1</section>
+        <section class="section2">Section2</section>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>
